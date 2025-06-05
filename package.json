@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "name": "netodonalds-main",
+  "version": "1.0.0",
+  "description": "O projeto consiste em um sistema simples de venda de lanches semelhante ao McDonalds. O sistema irá possibilitar a venda de lanches como tapioca, cuzcuz, sanduiche e panquecas, onde será possível escolher recheios diversos. O sistema será uma aplicação fullstack com back-end, front-end e banco de dados (postgres).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
