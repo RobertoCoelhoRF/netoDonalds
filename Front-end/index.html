@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netodonalds</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img width="100" src="./imgs/logo.png" alt="" />
+      <h1>Bem vindo!</h1>
+    </header>
+    <hr />
+    <div class="menu-container">
+      <div class="food-container">
+        Escolha o seu lanche:
+        <input onchange="getFood(1)" type="radio" id="tapioca" name="food" /> Tapioca
+        <input onchange="getFood(2)" type="radio" id="cuzcuz" name="food" /> Cuzcuz
+      </div>
+      <div class="buyer-container">
+        CPF do comprador: <input type="number" id="cpf" />
+      </div>
+    </div>
+
+    <div class="body-container">
+      <div class="fillings-container">
+  <h2>Escolha o seu recheio</h2>
+      <div class="fillings">
+  </div>
+</div>
+
+<div class="price-container">
+  <h2>Preço Total: R$ <span id="price">0.00</span></h2>
+  <p>Recheios selecionados: <span id="selected-fillings">Nenhum recheio selecionado</span></p>
+  <button id="comprar-btn">Pagar</button>
+  <button id="historico-btn">Histórico</button>
+</div>
+
+<div id="historico-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Histórico de Compras</h2>
+    <ul id="historico-list"></ul>
+  </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>

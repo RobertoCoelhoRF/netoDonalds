@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e5d1cd;
+}
+
+header {
+  display: flex;
+  background-color: #cf2410;
+  color: white;
+  gap: 15px;
+  align-items: center;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.fillings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fillings-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex-basis: 50%;
+}
+
+.body-container {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+}
+
+.price-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+#comprar-btn {
+  background-color: #cf2410;
+  color: rgb(255, 255, 72);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#comprar-btn:hover {
+  background-color: #e64a19;
+}
+
+#historico-btn {
+  background-color: #cf2410;
+  color: rgb(255, 255, 72);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#historico-btn:hover{
+  background-color: #e64a19;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
